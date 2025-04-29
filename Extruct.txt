@@ -1,0 +1,28 @@
+jernel-olart-website/
+│
+├── index.html                  # Página principal
+├── servicios.html              # Catálogo de servicios
+├── proyectos.html              # Portafolio de proyectos
+├── productos.html              # Catálogo de productos
+├── contacto.html               # Formulario de contacto
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css           # Estilos personalizados
+│   │   ├── animate.min.css     # Librería de animaciones
+│   │   └── swiper-bundle.min.css # Estilos del slider
+│   │
+│   ├── js/
+│   │   ├── main.js             # Funcionalidades principales
+│   │   ├── swiper-bundle.min.js # Slider interactivo
+│   │   └── scrollreveal.min.js # Efectos al hacer scroll
+│   │
+│   ├── img/                    # Imágenes (logo, proyectos, productos, etc.)
+│   │   ├── logo.png
+│   │   ├── proyectos/
+│   │   ├── productos/
+│   │   └── hero-bg.jpg         # Imagen de fondo para el banner
+│   │
+│   └── fonts/                  # Fuentes personalizadas (opcional)
+│
+└── README.md                   # Instrucciones de despliegue
