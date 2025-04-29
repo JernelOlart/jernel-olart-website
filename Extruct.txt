@@ -1,28 +1,27 @@
-jernel-olart-website/
+/jernel-olart-website
 │
-├── index.html                  # Página principal
-├── servicios.html              # Catálogo de servicios
-├── proyectos.html              # Portafolio de proyectos
-├── productos.html              # Catálogo de productos
-├── contacto.html               # Formulario de contacto
+├── index.html              # Página principal
+├── about.html              # Sobre nosotros (misión, visión, valores)
+├── services.html           # Catálogo de servicios completo
+├── contact.html            # Formulario de contacto
 │
-├── assets/
-│   ├── css/
-│   │   ├── style.css           # Estilos personalizados
-│   │   ├── animate.min.css     # Librería de animaciones
-│   │   └── swiper-bundle.min.css # Estilos del slider
+├── /assets
+│   ├── /css
+│   │   ├── style.css       # Estilos principales
+│   │   ├── animations.css  # Animaciones personalizadas
+│   │   └── responsive.css  # Media queries
 │   │
-│   ├── js/
-│   │   ├── main.js             # Funcionalidades principales
-│   │   ├── swiper-bundle.min.js # Slider interactivo
-│   │   └── scrollreveal.min.js # Efectos al hacer scroll
+│   ├── /js
+│   │   ├── main.js         # Funcionalidades JS
+│   │   ├── animations.js   # Control de animaciones
+│   │   └── carousel.js     # Control de banners
 │   │
-│   ├── img/                    # Imágenes (logo, proyectos, productos, etc.)
-│   │   ├── logo.png
-│   │   ├── proyectos/
-│   │   ├── productos/
-│   │   └── hero-bg.jpg         # Imagen de fondo para el banner
+│   ├── /images
+│   │   ├── /banners        # Imágenes para banners
+│   │   ├── /products       # Imágenes de productos
+│   │   ├── /icons          # Íconos y logos
+│   │   └── logo.png        # Logo de la empresa
 │   │
-│   └── fonts/                  # Fuentes personalizadas (opcional)
+│   └── /fonts              # Fuentes personalizadas
 │
-└── README.md                   # Instrucciones de despliegue
+└── README.md               # Instrucciones de implementación
