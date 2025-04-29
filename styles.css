@@ -225,7 +225,7 @@ img {
 .hero {
     height: 100vh;
     min-height: 700px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/projects/tech-1.png') no-repeat center center/cover;
     display: flex;
     align-items: center;
     color: var(--white);
