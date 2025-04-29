@@ -157,45 +157,56 @@ img {
     padding: 1rem 0;
 }
 
+/* Header Styles - Versión mejorada */
 .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-}
-
-.logo {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--dark-color);
-    display: flex;
-    align-items: center;
-}
-
-.logo span {
-    color: var(--secondary-color);
-    margin-right: 0.5rem;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
+    height: 90px; /* Aumentamos la altura del header */
 }
 
 .nav-list {
-    display: flex;
+    gap: 2rem; /* Espacio entre elementos del menú */
 }
 
 .nav-item {
-    margin-left: 3rem;
+    margin-left: 0; /* Eliminamos el margin-left anterior */
+    position: relative;
+    padding: 1rem 0; /* Añadimos padding vertical */
 }
 
 .nav-link {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--dark-color);
-    position: relative;
-    padding: 0.5rem 0;
+    font-size: 1.7rem; /* Tamaño de fuente ligeramente mayor */
+    padding: 0.8rem 1.5rem; /* Más espacio interno */
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: rgba(52, 152, 219, 0.1); /* Fondo sutil al activar/hover */
+}
+
+.nav-link::after {
+    bottom: -5px; /* Ajustamos la posición de la línea inferior */
+    height: 3px; /* Línea más gruesa */
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+    .header .container {
+        height: auto;
+        padding: 1.5rem 0;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+    
+    .nav-link {
+        padding: 1rem 0;
+        font-size: 1.8rem;
+    }
 }
 
 .nav-link::after {
