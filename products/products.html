@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Jernel Olart Suministros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../animations.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo animate-left">
+                <span>Jernel</span>Olart
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="../index.html#home" class="nav-link">Inicio</a></li>
+                    <li><a href="../index.html#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="../index.html#services" class="nav-link">Servicios</a></li>
+                    <li><a href="../index.html#projects" class="nav-link">Proyectos</a></li>
+                    <li><a href="products.html" class="nav-link active">Productos</a></li>
+                    <li><a href="../index.html#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Hero -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-top">Nuestros <span>Productos</span></h1>
+                <p class="hero-text animate-bottom">Equipos de calidad para construcción, tecnología y más</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-top">Catálogo de Productos</h2>
+                <div class="section-line animate-line"></div>
+                <p class="section-subtitle animate-bottom">Descubre nuestra amplia gama de productos de calidad</p>
+            </div>
+            
+            <div class="products-tabs animate-bottom">
+                <button class="tab-btn active" data-filter="all">Todos</button>
+                <button class="tab-btn" data-filter="computers">Equipos de Cómputo</button>
+                <button class="tab-btn" data-filter="security">Seguridad</button>
+                <button class="tab-btn" data-filter="construction">Construcción</button>
+                <button class="tab-btn" data-filter="tools">Herramientas</button>
+                <button class="tab-btn" data-filter="accessories">Accesorios</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-item animate-bottom" data-category="computers">
+                    <div class="product-image">
+                        <img src="../assets/products/laptop.jpg" alt="Laptop">
+                        <div class="product-badge">Nuevo</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Laptop HP EliteBook</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24)</span>
+                        </div>
+                        <p class="product-description">Laptop empresarial con procesador Intel Core i5, 8GB RAM, 256GB SSD, pantalla 14" Full HD.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$12,499 <span class="old-price">$14,999</span></span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-item animate-bottom" data-category="computers">
+                    <div class="product-image">
+                        <img src="../assets/products/desktop.jpg" alt="Computadora de escritorio">
+                        <div class="product-badge">Oferta</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Computadora de Escritorio</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(18)</span>
+                        </div>
+                        <p class="product-description">PC con procesador AMD Ryzen 5, 16GB RAM, 512GB SSD + 1TB HDD, gráficos Radeon Vega.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$15,999 <span class="old-price">$18,499</span></span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-item animate-bottom" data-category="security">
+                    <div class="product-image">
+                        <img src="../assets/products/camera.jpg" alt="Cámara de seguridad">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Cámara de Seguridad Hikvision</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(32)</span>
+                        </div>
+                        <p class="product-description">Cámara IP dome 4MP con visión nocturna, resistente a la intemperie, audio bidireccional.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$2,499</span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-item animate-bottom" data-category="security">
+                    <div class="product-image">
+                        <img src="../assets/products/dvr.jpg" alt="DVR para seguridad">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">DVR 8 Canales</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(12)</span>
+                        </div>
+                        <p class="product-description">Grabador digital de video con 8 canales, compatible con cámaras 5MP, salida HDMI.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$3,799</span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-item animate-bottom" data-category="construction">
+                    <div class="product-image">
+                        <img src="../assets/products/cement.jpg" alt="Cemento">
+                        <div class="product-badge">Popular</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Cemento Gris 50kg</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(45)</span>
+                        </div>
+                        <p class="product-description">Cemento Portland Compuesto CPC 30R de alta resistencia y calidad.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$189</span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-item animate-bottom" data-category="construction">
+                    <div class="product-image">
+                        <img src="../assets/products/block.jpg" alt="Block de construcción">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Block Hueco 12x20x40</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(28)</span>
+                        </div>
+                        <p class="product-description">Block de concreto estándar para construcción, alta resistencia y durabilidad.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$12.50 <span class="price-unit">/pieza</span></span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-item animate-bottom" data-category="tools">
+                    <div class="product-image">
+                        <img src="../assets/products/drill.jpg" alt="Taladro">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Taladro Percutor 1/2"</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(36)</span>
+                        </div>
+                        <p class="product-description">Taladro percutor de 850W, velocidad variable, reversible, incluye maletín y accesorios.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$1,299</span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-item animate-bottom" data-category="tools">
+                    <div class="product-image">
+                        <img src="../assets/products/saw.jpg" alt="Sierra circular">
+                        <div class="product-badge">Nuevo</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sierra Circular 7-1/4"</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(14)</span>
+                        </div>
+                        <p class="product-description">Sierra circular de 15A, corte a 45°, profundidad máxima de corte de 2-7/16".</p>
+                        <div class="product-meta">
+                            <span class="product-price">$2,199</span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 9 -->
+                <div class="product-item animate-bottom" data-category="accessories">
+                    <div class="product-image">
+                        <img src="../assets/products/chair.jpg" alt="Silla gamer">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Silla Gamer Ergonómica</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(41)</span>
+                        </div>
+                        <p class="product-description">Silla ergonómica con soporte lumbar, reposacabezas y brazos ajustables, base metálica.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$3,499 <span class="old-price">$4,199</span></span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 10 -->
+                <div class="product-item animate-bottom" data-category="accessories">
+                    <div class="product-image">
+                        <img src="../assets/products/headphones.jpg" alt="Audífonos">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Audífonos Inalámbricos</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(27)</span>
+                        </div>
+                        <p class="product-description">Audífonos Bluetooth con cancelación de ruido, batería de 30h, micrófono incorporado.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$1,899</span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 11 -->
+                <div class="product-item animate-bottom" data-category="computers">
+                    <div class="product-image">
+                        <img src="../assets/products/monitor.jpg" alt="Monitor">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Monitor 24" Full HD</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(19)</span>
+                        </div>
+                        <p class="product-description">Monitor LED 24 pulgadas, resolución 1920x1080, tiempo de respuesta 5ms, HDMI/VGA.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$2,899</span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 12 -->
+                <div class="product-item animate-bottom" data-category="tools">
+                    <div class="product-image">
+                        <img src="../assets/products/toolset.jpg" alt="Juego de herramientas">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Juego de Herramientas 100 Piezas</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(52)</span>
+                        </div>
+                        <p class="product-description">Set completo de herramientas manuales para el hogar y taller, incluye maletín de almacenamiento.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$1,599</span>
+                            <span class="product-stock">Disponible</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-pagination animate-bottom">
+                <button class="btn-pagination active">1</button>
+                <button class="btn-pagination">2</button>
+                <button class="btn-pagination">3</button>
+                <button class="btn-pagination">4</button>
+                <button class="btn-pagination"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="animate-bottom">Suscríbete a nuestro boletín</h2>
+                <p class="animate-bottom">Recibe ofertas exclusivas y novedades sobre nuestros productos.</p>
+                <form class="animate-bottom">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Jernel Olart Suministros</h3>
+                    <p>Soluciones integrales en construcción, mantenimiento y tecnología con un enfoque humano, sostenible e innovador.</p>
+                    <div class="footer-logo">
+                        <span>Jernel</span>Olart
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categorías</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Equipos de Cómputo</a></li>
+                        <li><a href="#">Sistemas de Seguridad</a></li>
+                        <li><a href="#">Materiales de Construcción</a></li>
+                        <li><a href="#">Herramientas</a></li>
+                        <li><a href="#">Accesorios Tecnológicos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../index.html#about">Nosotros</a></li>
+                        <li><a href="../index.html#services">Servicios</a></li>
+                        <li><a href="../index.html#projects">Proyectos</a></li>
+                        <li><a href="products.html">Productos</a></li>
+                        <li><a href="../index.html#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Mártires de Tacubaya #211, Villahermosa, Tab.</li>
+                        <li><i class="fas fa-phone-alt"></i> 993 455 4410</li>
+                        <li><i class="fas fa-envelope"></i> JernelOlart@Proton.me</li>
+                    </ul>
+                    
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2023 Jernel Olart Suministros. Todos los derechos reservados.</p>
+                </div>
+                
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>

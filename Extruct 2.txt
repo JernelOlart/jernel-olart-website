@@ -1,0 +1,55 @@
+jernel-olart-website/
+│
+├── index.html
+├── styles.css
+├── animations.css
+├── script.js
+│
+├── products/
+│   ├── products.html
+│   ├── products.css
+│   └── products.js
+│
+└── assets/
+    ├── hero-bg.jpg
+    ├── about-image.jpg
+    ├── products-bg.jpg
+    │
+    ├── projects/
+    │   ├── construction-1.jpg
+    │   ├── construction-2.jpg
+    │   ├── tech-1.jpg
+    │   ├── tech-2.jpg
+    │   ├── tech-3.jpg
+    │   └── maintenance-1.jpg
+    │
+    ├── products/
+    │   ├── laptop.jpg
+    │   ├── desktop.jpg
+    │   ├── camera.jpg
+    │   ├── dvr.jpg
+    │   ├── cement.jpg
+    │   ├── block.jpg
+    │   ├── drill.jpg
+    │   ├── saw.jpg
+    │   ├── chair.jpg
+    │   ├── headphones.jpg
+    │   ├── monitor.jpg
+    │   └── toolset.jpg
+    │
+    ├── tech-icons/
+    │   ├── autocad.png
+    │   ├── revit.png
+    │   ├── sketchup.png
+    │   ├── hikvision.png
+    │   ├── dahua.png
+    │   ├── microsoft.png
+    │   ├── react.png
+    │   ├── nodejs.png
+    │   ├── python.png
+    │   └── arduino.png
+    │
+    └── testimonials/
+        ├── client-1.jpg
+        ├── client-2.jpg
+        └── client-3.jpg
