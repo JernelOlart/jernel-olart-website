@@ -102,6 +102,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize Swiper Sliders
     // Technologies Slider
+
+
+const heroSwiper = new Swiper('.hero-slider', {
+    loop: true,
+    speed: 800,
+    parallax: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
+
     const techSwiper = new Swiper('.technologies-slider', {
         slidesPerView: 2,
         spaceBetween: 20,
@@ -181,3 +205,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+

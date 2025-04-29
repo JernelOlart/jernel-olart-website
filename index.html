@@ -48,24 +48,48 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title animate-top">Soluciones Integrales en <span>Construcción y Tecnología</span></h1>
-                <p class="hero-text animate-bottom">Excelencia, innovación y versatilidad para cada proyecto</p>
-                <div class="hero-btns animate-bottom">
-                    <a href="#contact" class="btn btn-primary">Contáctanos</a>
-                    <a href="#services" class="btn btn-secondary">Nuestros Servicios</a>
+<!-- Hero Section with Slider -->
+<section class="hero" id="home">
+    <div class="hero-slider swiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 - Construcción -->
+            <div class="swiper-slide hero-slide" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-top">Expertos en <span>Construcción Civil</span></h1>
+                    <p class="hero-text animate-bottom">Diseño y ejecución de proyectos arquitectónicos con los más altos estándares de calidad</p>
+                </div>
+            </div>
+            
+            <!-- Slide 2 - Tecnología -->
+            <div class="swiper-slide hero-slide" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-top">Soluciones <span>Tecnológicas</span></h1>
+                    <p class="hero-text animate-bottom">Sistemas de seguridad, desarrollo de software y equipos de cómputo</p>
+                </div>
+            </div>
+            
+            <!-- Slide 3 - Redes -->
+            <div class="swiper-slide hero-slide" style="background-image: url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1472&q=80')">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-top">Infraestructura de <span>Redes</span></h1>
+                    <p class="hero-text animate-bottom">Implementación de sistemas de cableado estructurado y comunicaciones</p>
                 </div>
             </div>
         </div>
         
+        <!-- Controles del slider -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        
+        <!-- Scroll down (mantenemos este elemento) -->
         <div class="hero-scroll-down">
             <a href="#about" class="scroll-down">
                 <i class="fas fa-chevron-down"></i>
             </a>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- About Section -->
     <section class="section about" id="about">
