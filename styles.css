@@ -140,73 +140,51 @@ img {
 }
 
 /* Header Styles */
+/* Header Styles - Versión Corregida */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
-}
-
-.header.scrolled {
     background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    padding: 1.5rem 0;
 }
 
-/* Header Styles - Versión mejorada */
 .header .container {
-    height: 90px; /* Aumentamos la altura del header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
 }
 
 .nav-list {
-    gap: 2rem; /* Espacio entre elementos del menú */
-}
-
-.nav-item {
-    margin-left: 0; /* Eliminamos el margin-left anterior */
-    position: relative;
-    padding: 1rem 0; /* Añadimos padding vertical */
+    display: flex;
+    gap: 3rem;
 }
 
 .nav-link {
-    font-size: 1.7rem; /* Tamaño de fuente ligeramente mayor */
-    padding: 0.8rem 1.5rem; /* Más espacio interno */
-    transition: all 0.3s ease;
-    border-radius: 5px; /* Bordes redondeados */
-}
-
-.nav-link:hover,
-.nav-link.active {
-    background-color: rgba(52, 152, 219, 0.1); /* Fondo sutil al activar/hover */
-}
-
-.nav-link::after {
-    bottom: -5px; /* Ajustamos la posición de la línea inferior */
-    height: 3px; /* Línea más gruesa */
-}
-
-/* Versión móvil */
-@media (max-width: 768px) {
-    .header .container {
-        height: auto;
-        padding: 1.5rem 0;
-    }
-    
-    .nav-list {
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: flex-start;
-        padding: 2rem;
-    }
-    
-    .nav-link {
-        padding: 1rem 0;
-        font-size: 1.8rem;
-    }
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    position: relative;
+    padding: 1rem 0;
+    transition: var(--transition);
 }
 
 .nav-link::after {
@@ -215,9 +193,14 @@ img {
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
     background-color: var(--secondary-color);
     transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--secondary-color);
 }
 
 .nav-link:hover::after,
@@ -230,6 +213,43 @@ img {
     color: var(--dark-color);
     cursor: pointer;
     display: none;
+    z-index: 1001;
+}
+
+/* Versión móvil */
+@media (max-width: 992px) {
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8rem 3rem 3rem;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-link {
+        font-size: 1.8rem;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .header.scrolled {
+        padding: 1rem 0;
+    }
 }
 
 /* Hero Section */
